@@ -1,1 +1,1 @@
-module.exports = 'dv-wifi-ui'
+module.exports = 'wifi-mon-ui'

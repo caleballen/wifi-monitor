@@ -2,7 +2,6 @@ import React from 'react';
 import Graph from './components/Graph';
 
 const SpeedGraph = () => {
-
   const data = {
     labels: ['time', 'time 2', 'time 3'],
     datasets: [
