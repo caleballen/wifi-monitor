@@ -1,1 +1,1 @@
-module.exports = 'wifi-mon-server'
+module.exports = 'wifi-mon-server';

@@ -4,6 +4,20 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "start": "lerna run start"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "react-app"
+    ],
+    "env": [
+      "node"
+    ]
+  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
