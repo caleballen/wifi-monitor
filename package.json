@@ -5,7 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "lerna run start"
+    "start": "lerna run start",
+    "install": "lerna run install",
+    "build": "lerna run build"
   },
   "eslintConfig": {
     "plugins": [
@@ -17,6 +19,9 @@
     "env": [
       "node"
     ]
+  },
+  "dependencies": {
+    "lerna": "^3.20.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

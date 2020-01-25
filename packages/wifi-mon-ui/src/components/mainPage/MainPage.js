@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Detector } from 'react-detect-offline';
 import SpeedGraph from './components/SpeedGraph';
 
 const MainPage = () => {
   const [data, setData] = useState(null);
-  fetch('http://localhost:4000').then(async (res) => setData(await res.json()));
+  useEffect(() => {
+    fetch('http://localhost:4000').then(async (res) => setData(await res.json()));
+  }, []);
 
   let graphData = null;
   if (data) {
