@@ -10,8 +10,7 @@ RUN speedtest-cli --csv-header > /speed.csv
 COPY packages /packages
 COPY package.json lerna.json /
 
-RUN npm install -g lerna
+RUN npm i -g lerna
 RUN lerna exec npm i && lerna run build
-# RUN cd packages/wifi-mon-ui && npm run-script build
 
 CMD crond && npm start
