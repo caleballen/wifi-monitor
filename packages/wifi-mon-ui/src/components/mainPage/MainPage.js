@@ -14,16 +14,18 @@ const MainPage = () => {
 
   if (data) {
     graphData = {
-      labels: data.map((value) => value.Timestamp),
+      // labels: data.map((value) => value.Timestamp),
       datasets: [
         {
           label: 'Upload',
-          data: data.map((value) => Math.round(value.Upload / 1000)),
+          showLine: true,
+          data: data.map((value) => ({y: Math.round(value.Upload / 10000)/100, x: Date.parse(value.Timestamp)})),
           backgroundColor: "#bfe78d"
         },
         {
           label: 'Download',
-          data: data.map((value) => Math.round(value.Download / 1000)),
+          showLine: true,
+          data: data.map((value) => ({y: Math.round(value.Download / 10000)/100, x: Date.parse(value.Timestamp)})),
           backgroundColor: "#B58DE7"
         },
       ],
