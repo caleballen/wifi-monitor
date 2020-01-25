@@ -36,7 +36,7 @@ const MainPage = () => {
       <Detector
         render={({ online }) => (online ? "it's online" : "it's broke")}
       />
-      {graphData ? <SpeedGraph data={graphData} options={options}/> : null}
+      {graphData ? <SpeedGraph data={graphData}/> : null}
     </div>
   );
 };
