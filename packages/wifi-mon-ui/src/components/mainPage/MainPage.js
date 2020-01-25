@@ -37,6 +37,8 @@ const MainPage = () => {
         render={({ online }) => (online ? "it's online" : "it's broke")}
       />
       {graphData ? <SpeedGraph data={graphData}/> : null}
+      <br />
+      <a href="http://localhost:4000/download">Save .csv file</a>
     </div>
   );
 };

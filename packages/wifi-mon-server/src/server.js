@@ -7,6 +7,11 @@ const server = express();
 
 server.use(cors());
 
+server.get('/download', function(req, res){
+  const file = `/speed.csv`;
+  res.download(file);
+});
+
 server.get('/', async (req, res) => {
   const data = await parse(readFileSync('/speed.csv').toString(), {
     columns: true,
