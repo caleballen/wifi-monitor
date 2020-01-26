@@ -34,7 +34,7 @@ const MainPage = ({ data }) => {
       />
       {graphData ? <SpeedGraph data={graphData}/> : null}
       <br />
-      <a href="http://localhost:4000/download">Save .csv file</a>
+      <a href="/api/download">Save .csv file</a>
     </div>
   );
 };
