@@ -13,7 +13,6 @@
     "build": "lerna run build"
   },
   "dependencies": {
-
     "lerna": "^3.20.0"
   },
   "devDependencies": {
