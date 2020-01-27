@@ -9,7 +9,8 @@ const options = {
     }],
       yAxes: [{
           ticks: {
-              userCallback: (item) => `${item} MBps`
+            beginAtZero: true,
+            userCallback: (item) => `${item} MBps`
           }
       }]
 },
