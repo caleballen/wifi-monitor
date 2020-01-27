@@ -1,1 +1,1 @@
-* * * * * speedtest-cli --csv --server 1144 >> /speed.csv
+*/5 * * * * speedtest-cli --csv --server 1144 >> /speed.csv
